@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome | Limon Cafe</title>
+  <link rel="stylesheet" href="./CSS/output.css">
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/1c6364f841.js" crossorigin="anonymous"></script>
+  <!-- AOS Style -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body class="font-outfit overflow-x-hidden bg-baseBg">
+  <!-- Header -->
+  <header class="fixed flex m-auto w-full left-0 right-0 justify-between z-50 items-center py-4 px-5 laptop:px-10 duration-300 bg-baseBg">
+    <a href="#home" class="laptop:hidden">
+      <img class="w-32" src="./public/img/logo-limon.png" alt="">
+    </a>
+    <div class="navbar invisible opacity-0 p-5 m-auto w-full laptop:w-full bg-baseBg/80 flex flex-col items-start gap-4 absolute left-0 top-[105px] right-0 rounded-b-2xl duration-300 laptop:flex-row laptop:static laptop:visible laptop:opacity-100 laptop:items-center laptop:gap-20 laptop:justify-center laptop:bg-transparent laptop:p-0">
+        <nav>
+            <ul class="flex flex-col gap-4 laptop:flex-row laptop:gap-8">
+              <li><a class="links" href="#about">About Us</a></li>
+              <li><a class="links" href="#ourfood">Our Food</a></li>
+              <li><a class="links" href="#menus">Menus</a></li>
+            </ul>
+        </nav>
+        <a href="#home" class="sm:hidden laptop:block">
+          <img class="w-32" src="./public/img/logo-limon.png" alt="">
+        </a>
+        <nav class="w-full laptop:w-fit">
+            <ul class="flex w-full flex-col gap-4 laptop:flex-row laptop:gap-8">
+              <li><a class="links" href="#photos">Photos</a></li>
+              <li><a class="links" href="#contact">Contact Us</a></li>
+              <li class="flex laptop:block justify-center"><a class="links-btn w-full text-center" href="#order">Order Online</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="menu-toggle relative flex items-center h-[30px] w-[30px] laptop:hidden">
+        <button id="hamburger" class="absolute flex flex-col items-end gap-2">
+            <span
+                class="bg-main h-[3px] w-[35px] block transition ease-in-out duration-300 origin-top-right"></span>
+            <span class="bg-main h-[3px] w-[25px] block transition ease-in-out duration-300"></span>
+            <span
+                class="bg-main h-[3px] w-[15px] block transition ease-in-out duration-300 origin-bottom-right"></span>
+        </button>
+    </div>
+  </header>
+
+  <!-- Home -->
+  <main class="">
+    <section id="home" class="py-52 px-24 bg-home-bg">
+      <h1 class="font-RubikOne">WELCOME TO LIMON FUCK YOU</h1>
+      <p class="font-Manrope">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa minus similique neque sit iusto beatae quod! Accusamus consequatur autem dolor magni commodi voluptatem reprehenderit maiores harum, nisi debitis, rerum recusandae quos non et. Enim error amet, hic porro nihil non quas qui laboriosam velit unde itaque totam quisquam explicabo minus a accusamus? Corrupti, ipsum cumque soluta fugiat natus atque qui tenetur culpa nesciunt beatae repudiandae id suscipit. Ipsa, veritatis soluta nisi debitis nobis obcaecati perferendis provident corrupti enim tempore ab, quibusdam praesentium fugit quae dicta illum excepturi dolorem eveniet porro veniam. Quisquam tempora officia, deleniti in doloribus consectetur nesciunt beatae.</p>
+    </section>
+  </main>
+
+
+<!-- Main JS -->
+<script src="./JS/script.js"></script>
+<!-- AOS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+/* Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'RubikOne';
+    display: swap;
+    src: url("../public/fonts/RubikOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Manrope';
+    display: swap;
+    src: url("../public/fonts/Manrope-VariableFont_wght.ttf");
+}
+
+/* Main Style */
+.links{
+    @apply text-dark font-semibold duration-100 relative laptop:text-lg;
+}
+.links::after{
+    content: '';
+    @apply bg-dark w-0 h-[2px] absolute left-0 bottom-0 hover:w-full duration-300;
+}
+
+.links-btn{
+    @apply text-white py-2 px-4 rounded-md bg-alternative font-semibold duration-100 relative border-transparent laptop:text-lg hover:text-dark border-2 hover:border-dark hover:bg-transparent;
+}
+
+.section{
+    @apply pt-28 laptop:pt-32 px-5 flex laptop:justify-center tablet:px-10 flex-col gap-5 laptop:grid laptop:grid-cols-2 laptop:px-40;
+}
+
+.btn-link{
+    @apply py-1 px-6 rounded-md duration-300 w-max font-semibold laptop:text-2xl laptop:py-2 laptop:px-10;
+}
+
+.sosmed-links{
+    @apply text-dark text-xl laptop:text-3xl hover:scale-110 duration-300;
+}
+
+/* Menu Toggle Animation */
+.hamburger-active > span:nth-child(1) {
+    @apply -rotate-[40deg];
+}
+
+.hamburger-active > span:nth-child(2) {
+    @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+    @apply w-[35px] rotate-[40deg];
+}
+
+.navbar.slide {
+    @apply visible opacity-100 backdrop-blur-md;
+}
+
+/* Scrolled Animation */
+header.scrolled {
+    @apply bg-white;
+}
