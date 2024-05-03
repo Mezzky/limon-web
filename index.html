@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth overflow-x-hidden">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
   <!-- AOS Style -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
-<body class="font-outfit overflow-x-hidden bg-baseBg">
+<body class="font-outfit overflow-x-hidden bg-baseBg h-[2000px]">
   <!-- Header -->
   <header class="fixed flex m-auto w-full left-0 right-0 justify-between z-50 items-center py-4 px-5 laptop:px-10 duration-300 bg-baseBg">
     <a href="#home" class="laptop:hidden">
@@ -46,9 +46,9 @@
     </div>
   </header>
 
-  <!-- Home -->
   <main class="">
-    <section id="home" class="pt-32 pb-28 px-10 bg-home-bg grid grid-cols-1 tablet:grid-cols-2">
+    <!-- Home -->
+    <section id="home" class="pt-36 pb-24 px-8 bg-home-bg grid grid-cols-1 tablet:grid-cols-2 laptop:pt-40">
       <div class="home-content flex flex-col gap-5">
         <h1 class="title text-baseBg">Feel Good Cafe, Bakery & Juice Bar</h1>
         <p class="description text-white">Pizza ipsum dolor meat lovers buffalo. Style pork beef dolor bbq Bianca cheese. Sauce sautéed pie pie ranch mayo meat pineapple. Pizza ipsum dolor meat lovers buffalo.</p>
@@ -58,15 +58,43 @@
 
       </div>
     </section>
-    <div class="ads-bar bg-alternative">
-      <marquee>
-        <div class="flex w-full bg-re90 justify-evenly">
-          <h1>#EATLIMONCAFE</h1>
-          <h1>#EATLIMONCAFE</h1>
-          <h1>#EATLIMONCAFE</h1>
-        </div>
-      </marquee>
+    <div class="ads-bar bg-alternative p-4">
+      <div class="w-full flex">
+        <ul class="flex items-center justify-center [&_li]:mx-2 animate-infinite-scroll">
+            <li class="ads-text">#EATLIMONCAFE</li>
+            <li class="ads-text">#EATLIMONCAFE</li>
+            <li class="ads-text">#EATLIMONCAFE</li>
+        </ul>
+        <ul class="flex items-center justify-center [&_li]:mx-2 animate-infinite-scroll">
+            <li class="ads-text">#EATLIMONCAFE</li>
+            <li class="ads-text">#EATLIMONCAFE</li>
+            <li class="ads-text">#EATLIMONCAFE</li>
+        </ul>
+        <ul class="flex items-center justify-center [&_li]:mx-2 animate-infinite-scroll">
+            <li class="ads-text">#EATLIMONCAFE</li>
+            <li class="ads-text">#EATLIMONCAFE</li>
+            <li class="ads-text">#EATLIMONCAFE</li>
+        </ul>
+        <ul class="flex items-center justify-center [&_li]:mx-2 animate-infinite-scroll">
+            <li class="ads-text">#EATLIMONCAFE</li>
+            <li class="ads-text">#EATLIMONCAFE</li>
+            <li class="ads-text">#EATLIMONCAFE</li>
+        </ul>
+      </div>
     </div>
+
+    <!-- About -->
+    <section class="section-layout bg-about-bg">
+      <div class="about-img">
+        <img src="./public/img/about-img.png" alt="">
+      </div>
+      <div class="about-content flex flex-col gap-2">
+        <h1 class="title text-dark">About Us</h1>
+        <span class="description">Our History Since 2024</span>
+        <p class="description">Pizza ipsum dolor meat lovers buffalo. Style pork beef dolor bbq Bianca cheese. Sauce sautéed pie pie ranch mayo meat pineapple. Pizza ipsum dolor meat lovers buffalo. Style pork beef dolor bbq Bianca cheese. Sauce sautéed pie pie ranch mayo meat pineapple. Pizza ipsum dolor meat lovers buffalo. Style pork beef dolor. bianca chesse sauce style beef dolor sit amet lorem apabila</p>
+        <a class="links-btn" href="">Explore More</a>
+      </div>
+    </section>
   </main>
 
 

@@ -30,8 +30,8 @@
     @apply text-white py-2 px-4 rounded-md bg-alternative font-semibold duration-100 relative border-transparent laptop:text-lg hover:text-dark border-2 hover:border-dark hover:bg-transparent;
 }
 
-.section{
-    @apply pt-28 laptop:pt-32 px-5 flex laptop:justify-center tablet:px-10 flex-col gap-5 laptop:grid laptop:grid-cols-2 laptop:px-40;
+.section-layout{
+    @apply py-24 px-8 grid grid-cols-1 gap-5 laptop:grid-cols-2;
 }
 
 .btn-link{
@@ -48,6 +48,10 @@
 
 .description{
     @apply font-Manrope font-medium;
+}
+
+.ads-text{
+    @apply text-baseBg font-bold text-2xl;
 }
 
 /* Menu Toggle Animation */
@@ -69,5 +73,5 @@
 
 /* Scrolled Animation */
 header.scrolled {
-    @apply bg-white;
+    @apply bg-baseBg;
 }

@@ -20,6 +20,16 @@ module.exports = {
         'service-bg': "url('/public/img/service-bg.png')",
       },
 
+      animation: {
+        'infinite-scroll': 'infinite-scroll 10s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        }
+      },        
+
       fontFamily: {
         poppins: "'Poppins', 'sans-serif'",
         outfit: "'Outfit', 'sans-serif'",
