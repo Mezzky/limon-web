@@ -707,6 +707,10 @@ video {
   gap: 1.25rem;
 }
 
+.self-center{
+  align-self: center;
+}
+
 .overflow-x-hidden{
   overflow-x: hidden;
 }
@@ -969,17 +973,45 @@ video {
   font-weight: 500;
 }
 
+@media (min-width: 1024px){
+  .title{
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
 .description{
   font-family: 'Manrope', 'sans-serif';
   font-weight: 500;
 }
 
+@media (min-width: 1024px){
+  .description{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
 .ads-text{
+  font-family: 'RubikOne', 'sans-serif';
   font-size: 1.5rem;
   line-height: 2rem;
-  font-weight: 700;
+  font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(255 245 231 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px){
+  .ads-text{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+.bg-fit{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Menu Toggle Animation */
@@ -1075,6 +1107,10 @@ header.scrolled{
     gap: 5rem;
   }
 
+  .laptop\:gap-5{
+    gap: 1.25rem;
+  }
+
   .laptop\:gap-8{
     gap: 2rem;
   }
@@ -1092,8 +1128,17 @@ header.scrolled{
     padding-right: 2.5rem;
   }
 
-  .laptop\:pt-40{
-    padding-top: 10rem;
+  .laptop\:px-20{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .laptop\:pb-40{
+    padding-bottom: 10rem;
+  }
+
+  .laptop\:pt-64{
+    padding-top: 16rem;
   }
 
   .laptop\:opacity-100{

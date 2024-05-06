@@ -43,15 +43,19 @@
 }
 
 .title{
-    @apply font-medium text-3xl font-RubikOne;
+    @apply font-medium text-3xl font-RubikOne laptop:text-5xl;
 }
 
 .description{
-    @apply font-Manrope font-medium;
+    @apply font-Manrope font-medium laptop:text-xl;
 }
 
 .ads-text{
-    @apply text-baseBg font-bold text-2xl;
+    @apply text-baseBg font-medium text-2xl laptop:text-4xl font-RubikOne;
+}
+
+.bg-fit{
+    @apply bg-no-repeat bg-cover bg-center;
 }
 
 /* Menu Toggle Animation */
